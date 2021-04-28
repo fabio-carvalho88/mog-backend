@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/communities/customers",
-      "handler": "community.customers",
+      "handler": "community.getAllCustomers",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/communities/partners",
-      "handler": "community.partners",
+      "handler": "community.getAllPartners",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "GET",
       "path": "/communities/resellers",
-      "handler": "community.resellers",
+      "handler": "community.getAllResellers",
       "config": {
         "policies": []
       }

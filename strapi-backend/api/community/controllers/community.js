@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-  customers: async (ctx) => {
+  getAllCustomers: async (ctx) => {
     const customers = await strapi
       .query("community")
       .find({ type: "Customers" });
@@ -17,7 +17,7 @@ module.exports = {
     });
   },
 
-  partners: async (ctx) => {
+  getAllPartners: async (ctx) => {
     const partners = await strapi.query("community").find({ type: "Partners" });
     ctx.send({
       message: partners.map((partner) => {
@@ -26,7 +26,7 @@ module.exports = {
     });
   },
 
-  resellers: async (ctx) => {
+  getAllResellers: async (ctx) => {
     const resellers = await strapi
       .query("community")
       .find({ type: "Resellers" });
