@@ -11,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string"
-    },
     "image": {
       "collection": "file",
       "via": "related",
@@ -24,6 +21,55 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "markets": {
+      "collection": "market",
+      "via": "products"
+    },
+    "model": {
+      "type": "string"
+    },
+    "family": {
+      "type": "enumeration",
+      "enum": [
+        "MAM4PRO",
+        "mDeck",
+        "Vizzi"
+      ]
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "longDescription": {
+      "type": "text"
+    },
+    "partNumber": {
+      "type": "string"
+    },
+    "datasheet": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.details"
+    },
+    "explores": {
+      "via": "products",
+      "collection": "explore"
+    },
+    "services": {
+      "via": "products",
+      "collection": "service"
     }
   }
 }

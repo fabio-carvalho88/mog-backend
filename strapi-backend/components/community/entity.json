@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_community_entities",
+  "info": {
+    "name": "Entity",
+    "icon": "home"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

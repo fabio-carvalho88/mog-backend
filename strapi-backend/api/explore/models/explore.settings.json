@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "explores",
+  "info": {
+    "name": "Explore"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "products": {
+      "collection": "product",
+      "via": "explores",
+      "dominant": true
+    }
+  }
+}
