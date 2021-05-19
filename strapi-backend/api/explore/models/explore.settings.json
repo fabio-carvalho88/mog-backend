@@ -11,8 +11,8 @@
   },
   "attributes": {
     "products": {
-      "collection": "product",
       "via": "explores",
+      "collection": "product",
       "dominant": true
     }
   }

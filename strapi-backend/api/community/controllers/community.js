@@ -36,4 +36,19 @@ module.exports = {
       }),
     });
   },
+
+  getCustomerByName: async (ctx) => {
+    const customers = await strapi.query("community").find({ id: 4 });
+    ctx.send({
+      message: customers.map((customer) => {
+        let entities = customer.entity;
+        let cliente = [];
+        entities.forEach((element) => {
+          cliente.push(element);
+        });
+
+        return cliente;
+      }),
+    });
+  },
 };

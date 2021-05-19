@@ -10,6 +10,11 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "image": {
       "collection": "file",
@@ -20,14 +25,24 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "markets": {
       "collection": "market",
       "via": "products"
     },
     "model": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "family": {
       "type": "enumeration",
@@ -35,16 +50,36 @@
         "MAM4PRO",
         "mDeck",
         "Vizzi"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "shortDescription": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "longDescription": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "partNumber": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "datasheet": {
       "model": "file",
@@ -53,23 +88,38 @@
         "files"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "price": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "details": {
       "type": "component",
       "repeatable": true,
-      "component": "product.details"
+      "component": "product.details",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "explores": {
-      "via": "products",
-      "collection": "explore"
+      "collection": "explore",
+      "via": "products"
     },
     "services": {
-      "via": "products",
-      "collection": "service"
+      "collection": "service",
+      "via": "products"
     }
   }
 }

@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/communities/customers",
+      "path": "/communities/getAllCustomers",
       "handler": "community.getAllCustomers",
       "config": {
         "policies": []
@@ -28,6 +28,14 @@
       "method": "GET",
       "path": "/communities/resellers",
       "handler": "community.getAllResellers",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/communities/customer",
+      "handler": "community.getCustomerByName",
       "config": {
         "policies": []
       }
